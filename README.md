@@ -14,6 +14,9 @@ Dostępność (WCAG): Poprawna hierarchia nagłówków, kontrasty i opisy altern
 
 Walidacja W3C: Kod został zweryfikowany pod kątem błędów składniowych i semantycznych.
 
+🌐 Demo na żywo
+Projekt jest dostępny w wersji demonstracyjnej pod adresem:
+👉 https://emilgorski6-dev.github.io/BIT/
 🛠️ Technologia
 Projekt wykracza poza materiał kursu, wykorzystując nowoczesne techniki webowe:
 
