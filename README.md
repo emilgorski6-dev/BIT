@@ -16,6 +16,7 @@ Walidacja W3C: Kod został zweryfikowany pod kątem błędów składniowych i se
 
 🌐 Demo na żywo
 Projekt jest dostępny w wersji demonstracyjnej pod adresem:
+
 👉 https://emilgorski6-dev.github.io/BIT/
 
 🛠️ Technologia
