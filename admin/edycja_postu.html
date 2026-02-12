@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT - Zarządzanie Użytkownikami</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <img src="../img/baner1.jpg" alt="baner" class="glowny-baner">
+        <div class="hero-content">
+            <h1><span class="podswietlony">Panel</span> Administracyjny</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../posty.html">Posty</a></li>
+            <li><a href="../admin/admin_uzytkownicy.html">Użytkownicy</a></li>
+            <li><a href="../admin/edycja_profilu.html">Mój Profil</a></li>
+            <li><a href="../statystyki.html">Statystyki</a></li>
+            <li><a href="../index.html" class="logout-link">Wyloguj</a></li>
+        </ul>
+    </nav>
+<section class="contact-section">
+        <div class="contact-container" style="max-width: 900px; text-align: left;">
+            <h2>Edytuj treść postu</h2>
+            <p style="margin-bottom: 30px;">Wprowadź zmiany w poniższych polach, aby zaktualizować artykuł.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Tytuł artykułu:</label>
+                    <input type="text" id="edit-title" value="">
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Kategoria:</label>
+                        <select id="edit-category" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #e2e8f0;">
+                            <option value="AI">AI</option>
+                            <option value="Ekologia">Ekologia</option>
+                            <option value="Bezpieczeństwo">Bezpieczeństwo</option>
+                            <option value="Hardware">Hardware</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Data publikacji:</label>
+                        <input type="date" id="edit-date" value="">
+                    </div>
+                </div>
+                <div style="display: flex; gap: 15px;">
+                    <a href="../admin/admin_posty.html" class="submit-btn" style="background: #64748b; text-decoration: none; text-align: center;">Anuluj</a>
+                    <button type="button" class="submit-btn" onclick="alert('Zmiany zapisane!')">Zapisz zmiany</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        const titleValue = urlParams.get('title');
+        const dateValue = urlParams.get('date');
+        const catValue = urlParams.get('cat');
+
+
+        if (titleValue) {
+            document.getElementById('edit-title').value = titleValue;
+        }
+        if (dateValue) {
+            document.getElementById('edit-date').value = dateValue;
+        }
+        if (catValue) {
+            document.getElementById('edit-category').value = catValue;
+        }
+    </script>
+</body>
+</html>

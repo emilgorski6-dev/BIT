@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT - Zarządzanie Użytkownikami</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <img src="../img/baner1.jpg" alt="baner" class="glowny-baner">
+        <div class="hero-content">
+            <h1><span class="podswietlony">Panel</span> Administracyjny</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../posty.html">Posty</a></li>
+            <li><a href="../admin/admin_uzytkownicy.html">Użytkownicy</a></li>
+            <li><a href="../admin/edycja_profilu.html">Mój Profil</a></li>
+            <li><a href="../statystyki.html">Statystyki</a></li>
+            <li><a href="../index.html" class="logout-link">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="statistics">
+    <h2>Lista Użytkowników</h2>
+    <div class="table-wrapper">
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Zdjęcie</th>
+                    <th>Imię i Nazwisko</th>
+                    <th>Email</th>
+                    <th>Rola</th>
+                    <th>Akcja</th>
+                </tr>
+            </thead>
+            <tbody>
+    <tr>
+        <td><img src="https://e7.pngegg.com/pngimages/896/789/png-clipart-management-master-of-business-administration-businessperson-business-people-entrepreneurship.png" class="user-avatar" alt="Emil Górski"></td>
+        <td>Emil Górski</td>
+        <td>e.gorski@bit.pl</td>
+        <td><span class="badge admin">Admin</span></td>
+        <td><a href="edycja_profilu.html?name=Emil&surname=Górski&email=e.gorski@bit.pl&role=admin&phone=123456789" class="read_more edit-btn">Edytuj</a></td>
+    </tr>
+    <tr>
+        <td><img src="https://scroll.morele.net/wp-content/uploads/2024/01/damian-cholewa-zdjecie-autora.png" class="user-avatar" alt="Andrzej Kowalski"></td>
+        <td>Andrzej Kowalski</td>
+        <td>a.kowalski@bit.pl</td>
+        <td><span class="badge editor">Redaktor</span></td>
+        <td><a href="edycja_profilu.html?name=Andrzej&surname=Kowalski&email=a.kowalski@bit.pl&role=editor&phone=111222333" class="read_more edit-btn">Edytuj</a></td>
+    </tr>
+    <tr>
+        <td><img src="https://img.freepik.com/premium-zdjecie/portretowy-profesjonalny-programista-pracujacy-na-komputerze-w-roznych-biurach-nowoczesne-technologie-informatyczne-rozwoj-aplikacji-programow-sztucznej-inteligencji-i-koncepcji-gier-wideo_154092-28462.jpg" class="user-avatar" alt="Jan Nowak"></td>
+        <td>Jan Nowak</td>
+        <td>j.nowak@bit.pl</td>
+        <td><span class="badge editor">Redaktor</span></td>
+        <td><a href="edycja_profilu.html?name=Jan&surname=Nowak&email=j.nowak@bit.pl&role=editor&phone=987654321" class="read_more edit-btn">Edytuj</a></td>
+    </tr>
+    <tr>
+        <td><img src="https://gigared.pe/wp-content/uploads/2020/04/kindpng_1019906.png" class="user-avatar" alt="Krzysztof Zieliński"></td>
+        <td>Krzysztof Zieliński</td>
+        <td>k.zielinski@bit.pl</td>
+        <td><span class="badge editor">Redaktor</span></td>
+        <td><a href="edycja_profilu.html?name=Krzysztof&surname=Zieliński&email=k.zielinski@bit.pl&role=user&phone=555666777" class="read_more edit-btn">Edytuj</a></td>
+    </tr>
+</tbody>
+        </table>
+    </div>
+</section>
+
+    <footer>
+        <p>Stronę wykonał: Emil Górski. Panel Administracyjny BIT</p>
+    </footer>
+</body>
+</html>
